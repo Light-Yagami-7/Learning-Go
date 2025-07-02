@@ -1,0 +1,30 @@
+package main
+
+import "fmt"
+
+func swap(x, y string) (string, string) {
+	return x, y
+}
+
+func split(sum int) (x, y int) {
+
+	x = sum * 2 / 8
+	y = sum - x
+	return
+
+}
+
+var (
+	beit bool   = false
+	Maxx uint64 = 1<<64 - 1
+)
+
+func main() {
+	a, b := swap("Hydrogen ", "Helium")
+	fmt.Println(a, b)
+
+	fmt.Println(split(2))
+
+	fmt.Printf("Type: %T, Value: %v/n", beit, beit)
+	fmt.Printf("Type: %T, Value: %v/n", Maxx, Maxx)
+}

@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func anal(num int) {
+	if num%2 == 0 {
+		fmt.Println("The number is even")
+	} else {
+		fmt.Println("The num is odd")
+	}
+
+	if num%3 == 0 {
+		fmt.Println("Its divisible by 3")
+
+	} else {
+		fmt.Println("Its not divisible by 3")
+	}
+
+	var sq int = num * num
+	fmt.Println("Your number's square is:", +sq)
+}
+
+func main() {
+	var nam int
+	fmt.Scanln(&nam)
+	fmt.Println("You selected", +nam)
+	anal(nam)
+
+}
